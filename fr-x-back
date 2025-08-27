@@ -32,7 +32,7 @@ export default function Home() {
 
   async function updateSentence() {
     try {
-      await contract.write("setSentence", ["Hello Blockchain!"]);
+      await contract.write("setSentence", ["Hello Initiaite!"]);
       alert("Sentence updated!");
     } catch (err) {
       console.error(err);
@@ -41,7 +41,7 @@ export default function Home() {
 
   return (
     <div style={{ padding: "20px" }}>
-      <h1>My Web3 dApp 🚀</h1>
+      <h1>My Web3 dApp</h1>
       <p>Current Sentence: {sentence}</p>
       <button onClick={updateSentence}>Update Sentence</button>
     </div>
